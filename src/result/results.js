@@ -10,6 +10,7 @@ const finalMessageDom = document.getElementById('final-message');
 const finalScore = document.getElementById('final-score');
 const playAgainButton = document.getElementById('play-again-button');
 
+// just make this an anchor link, no need for JavaScript
 playAgainButton.addEventListener('click', () => {
     window.location = './';
 });

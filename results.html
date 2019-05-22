@@ -10,8 +10,10 @@
 </head>
 <body>
     <header>
-        <section></section>
+        <section></section> <!-- why is empty section here? -->
+
         <h1 id="title">Karie Mondo Game</h1>
+        
         <section id="user-profile">
             <span id="avatar-image">
                 <img id ="pic" src="" alt="photo of me">
@@ -22,15 +24,17 @@
             </section>
         </section>
     </header>
+
     <main>
         <audio id="audio" src="./assets/sounds/thank-you-next-clip.mp3" autoplay loop></audio>
         <section id="messages">
             <p id="final-score"></p>
             <p id="final-message">You won!</p>
         </section>
-    <button id="play-again-button">Play Again!</button>
-    <button id="about-us-button"><a href="./about-us.html">Read more about us!</a></button>
-    <div></div>
+
+        <!-- use links, you can style them to be more button-like -->
+        <a href="./">Play Again!</a>
+        <a href="./about-us.html">Read more about us!</a>
     </main>
     <script type="module" src="./src/result/results.js"></script>
 </body>

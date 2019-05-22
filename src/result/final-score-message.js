@@ -1,12 +1,15 @@
-function finalScoreMessage(score, resultDictionary, itemArrayLength) {
-    if(score <= itemArrayLength * (1 / 3)) {
-        return resultDictionary.lost;
+function finalScoreMessage(score, results, maxLength) {
+    if(score <= maxLength * (1 / 3)) {
+        return results.lost;
     } 
-    else if(score <= itemArrayLength * (2 / 3)) {
-        return resultDictionary.okay;
+    else if(score <= maxLength * (2 / 3)) {
+        return results.okay;
     }
-    else if(score > itemArrayLength * (2 / 3) && score <= itemArrayLength) {
-        return resultDictionary.win;
+    else if(score > maxLength * (2 / 3) && score <= maxLength) {
+        return results.win;
+    }
+    else {
+        // cheat? ;)
     }
 }
 

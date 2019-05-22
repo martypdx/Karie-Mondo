@@ -3,9 +3,11 @@ function animateScore(score) {
     const submitButton = document.getElementById('submit-button');
     scoreAnimation.textContent = '+' + score;
     scoreAnimation.classList.add('elementToFadeOut');
-    submitButton.setAttribute('disabled', 'true');
+    // use properties from JavaScript on DOM elements:
+    submitButton.disabled = true;
+
     setTimeout(function(){
-        submitButton.removeAttribute('disabled');
+        submitButton.disabled = false;
         scoreAnimation.classList.remove('elementToFadeOut');
     }, 1000);
 }

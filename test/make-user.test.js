@@ -10,9 +10,8 @@ test('create user object from profile id', (assert) => {
         id: 2,
         score: 0
     };
-    const characterId = 2;
     // act
-    const result = makeUser(characterId);
+    const result = makeUser(user.id);
     // assert
     assert.deepEqual(result, user);
 });

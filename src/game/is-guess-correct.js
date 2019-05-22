@@ -1,16 +1,13 @@
 function isGuessCorrect(choiceId, match) {
-    if(choiceId === 'sparks-joy' && match) {
-        return true;
+    let correctChoice;
+    if(match) {
+        correctChoice = 'sparks-joy';
     }
-    else if(choiceId === 'sparks-joy' && !match) { 
-        return false;
+    else {
+        correctChoice = 'thank-you';
     }
-    else if(choiceId === 'thank-you' && match) {
-        return false;
-    } 
-    else if(choiceId === 'thank-you' && !match) {
-        return true;
-    }
+
+    return choiceId === correctChoice;
 }
 
 export default isGuessCorrect;

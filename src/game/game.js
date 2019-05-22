@@ -31,6 +31,7 @@ choiceForm.addEventListener('submit', (event) => {
     event.preventDefault();
     const formData = new FormData(choiceForm);
     const choiceId = formData.get('choices');
+    
     if(choiceId === 'sparks-joy') {
         sparkArray.push(itemArray[itemCounter]);
     }
